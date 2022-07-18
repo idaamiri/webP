@@ -90,7 +90,63 @@ let newDoc5 = shout("Tire");
 console.log(newDoc5);
 
 function math1(Eyes) {
-  let result1 = math1(Eyes + Eyes);
+  let result1 = Eyes + Eyes;
   console.log(result1);
   return result1;
 }
+
+let m1 = 10;
+let m2 = 5;
+console.log(m1 + m2);
+
+let m3 = 10;
+let m4 = 5;
+console.log(m1 - m2);
+
+let m5 = 10;
+let m6 = 5;
+console.log(m5 / m6);
+
+let m7 = 10;
+let m8 = 5;
+console.log(m7 * m8);
+
+// reminder baqimande
+let m9 = 10;
+let m10 = 3;
+console.log(m9 % m10);
+
+let m11 = 10;
+let m12 = 5;
+console.log(m11 ** m12);
+console.log(m11++);
+// ++ changes our amounnt of variable with 1 unit
+console.log(++m11);
+console.log(m11);
+console.log(--m11);
+console.log(m11);
+
+let c = 10;
+let c1 = 3;
+c = c + c1;
+console.log(c);
+// or
+let nn = 4;
+let mm = 5;
+nn += mm; // x=x+y
+nn *= mm; // x=x*y
+console.log(nn);
+
+let amount1 = 1;
+let amount2 = "1";
+console.log(amount1 > 1);
+console.log(amount1 >= 1);
+console.log(amount1 < 1);
+console.log(amount1 == 1); //not for type 
+console.log(amount1 != 1);
+console.log(amount2 === 1); //for type
+console.log(amount2 !== 1); //for type
+
+
+
+
