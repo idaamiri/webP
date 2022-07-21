@@ -142,11 +142,54 @@ let amount2 = "1";
 console.log(amount1 > 1);
 console.log(amount1 >= 1);
 console.log(amount1 < 1);
-console.log(amount1 == 1); //not for type 
+console.log(amount1 == 1); //not for type
 console.log(amount1 != 1);
 console.log(amount2 === 1); //for type
 console.log(amount2 !== 1); //for type
 
+let amount3 = false;
+let amount4 = amount3 === true ? "dashbord" : "login";
+console.log(amount4);
 
+// logical and or not
+console.log(true && true);
+console.log(true && true && false);
+console.log(false && true);
+console.log(false && false);
 
+let productcount = 3;
+let productprize = 1000;
+let credit = 1500;
+let buy = productcount > 0 && credit > productprize;
+console.log(buy);
 
+let productcount2 = 3;
+let productprize2 = 1000;
+let credit2 = 450;
+let buy2 = productcount2 > 0 && credit2 > productprize2;
+console.log(buy2);
+
+let productcount3 = 3;
+let productprize3 = 1000;
+let credit3 = 450;
+let buy3 = productcount3 > 0 || credit3 > productprize3;
+console.log(buy3);
+
+let productcount4 = 3;
+let productprize4 = 1000;
+let credit4 = 450;
+let buy4 = productcount4 > 0 || credit4 > productprize4;
+console.log(!buy4);
+
+function shortcut(a, b) {
+  return a.charAt(0) + b.charAt(0);
+}
+
+function firstChar(a) {
+  let b = a.trim();
+  return b.charAt(0);
+}
+
+false || true;
+false || "aida";
+false || 1;
