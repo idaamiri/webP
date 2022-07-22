@@ -147,6 +147,18 @@ console.log(amount1 != 1);
 console.log(amount2 === 1); //for type
 console.log(amount2 !== 1); //for type
 
+// false = undefined , null , 0 , "" , NaN
+// others are true
+
+function shortcut(a, b) {
+  return a.charAt(0) + b.charAt(0);
+}
+
+function firstChar(a) {
+  let b = a.trim();
+  return b.charAt(0);
+}
+
 let amount3 = false;
 let amount4 = amount3 === true ? "dashbord" : "login";
 console.log(amount4);
@@ -181,15 +193,65 @@ let credit4 = 450;
 let buy4 = productcount4 > 0 || credit4 > productprize4;
 console.log(!buy4);
 
-function shortcut(a, b) {
-  return a.charAt(0) + b.charAt(0);
+let miner = 20;
+let miner2 = 9;
+if (miner == 20) {
+  console.log("passed");
+} else {
+  ("failed");
 }
 
-function firstChar(a) {
-  let b = a.trim();
-  return b.charAt(0);
+if (true) {
+  console.log("yes");
 }
-
-false || true;
-false || "aida";
-false || 1;
+if (false) {
+  console.log("yes");
+}
+if (miner + miner2 == 30) {
+  console.log("40");
+}
+if (miner + miner2 == 29) {
+  let miner3 = "computer";
+  console.log(miner3);
+}
+let stu1 = 3;
+if (stu1 == 2) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
+let localHour = 15;
+if (localHour < 12) {
+  console.log("good morning");
+} else if (localHour > 12 && localHour < 18) {
+  console.log("good afternoon");
+} else {
+  console.log("good night");
+}
+let newStu = 50;
+if (newStu == 44 || newStu == 33) {
+  console.log("yes");
+} else if (newStu === "50") {
+  console.log("no");
+} else {
+  console.log("none");
+}
+let study = "50";
+if (study == "44" && newStu === "50") {
+  console.log("yes");
+} else if (study === "50") {
+  console.log("no");
+} else {
+  console.log("none");
+}
+let xx = 2;
+xx++;
+xx++;
+xx++;
+xx--;
+console.log(xx);
+if (xx == 4) {
+  console.log((xx += 2));
+} else {
+  console.log((xx -= 3));
+}
