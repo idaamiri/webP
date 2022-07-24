@@ -255,3 +255,75 @@ if (xx == 4) {
 } else {
   console.log((xx -= 3));
 }
+
+let newCountry = 3;
+switch (newCountry) {
+  case 3: {
+    console.log("HI");
+    break;
+  }
+  default: {
+    console.log("bye");
+  }
+}
+
+let newTown = "Tehran";
+switch (newTown) {
+  case "Tehran": {
+    console.log("wellcome");
+    break;
+  }
+  case "Karaj": {
+    console.log("good");
+  }
+}
+let day = 4;
+switch (new Date().getDay()) {
+  case 0: {
+    console.log("shanbe");
+    break;
+  }
+  case 1: {
+    console.log("1shanbe");
+    break;
+  }
+  case 2: {
+    console.log("2shanbe");
+    break;
+  }
+  case 3: {
+    console.log("3shanbe");
+    break;
+  }
+  case 4: {
+    console.log("4shanbe");
+    break;
+  }
+  case 5: {
+    console.log("5shanbe");
+    break;
+  }
+  case 6: {
+    console.log("jome");
+    break;
+  }
+}
+
+// when 2 choices are true
+let newTown0 = "karaj";
+switch (newTown0) {
+  case "karaj":
+  case "tehran":
+    console.log("the location of " + newTown0);
+    break;
+  default: {
+    console.log("no location");
+  }
+}
+//iteration must be limited
+let newx1 = 2;
+let newx2 = 3;
+let newx3 = newx1 + newx2;
+for (let i = 0; i < 10; i++) {
+  alert(newx3);
+}
