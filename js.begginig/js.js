@@ -325,5 +325,63 @@ let newx1 = 2;
 let newx2 = 3;
 let newx3 = newx1 + newx2;
 for (let i = 0; i < 10; i++) {
-  alert(newx3);
+  console.log(newx3);
 }
+
+let j;
+for (let j = 0; j < 4; j++) {
+  console.log(j);
+}
+
+let cc;
+for (let cc = 4; cc > 0; cc--) {
+  console.log(cc);
+}
+let newY = 2;
+let newZ = 3;
+let newS = newY + newZ;
+
+let vv = 1;
+while (vv < 5) {
+  console.log(vv);
+  vv++;
+}
+
+let newText1 = 0;
+do {
+  console.log(newText1);
+  newText1++;
+} while (newText1 < 5);
+
+let newText2 = 5;
+do {
+  console.log(newText2);
+  newText2--;
+} while (newText2 > 0);
+
+let newText4 = new Array("Sara", "Aida", "Parisa", "Sama", "Mina");
+console.log(newText4);
+console.log(newText4.length);
+
+for (let u = 0; u < newText4.length; u++) {
+  console.log(newText4[u]);
+}
+
+let txt = "";
+let studentClass = { stuFirstName: " Jackob", stuLastName: " Smith", age: 23 };
+for (let y in studentClass) {
+  txt += studentClass[y];
+}
+console.log(txt);
+
+let newText3 = ["Ali", "Amin", "Amir", "Mohammad"];
+console.log(newText3[1]);
+console.log(newText3);
+for (s = 0; s < 4; s++) {
+  console.log(newText3[s]);
+}
+let myText = "";
+for (let u in newText3) {
+  myText += newText3[u];
+}
+console.log(myText);
