@@ -380,8 +380,16 @@ console.log(newText3);
 for (s = 0; s < 4; s++) {
   console.log(newText3[s]);
 }
+
 let myText = "";
-for (let u in newText3) {
-  myText += newText3[u];
+for (let x in newText3) {
+  myText += newText3[x];
 }
 console.log(myText);
+
+let myNewText = "";
+for (let rr of newText3) {
+  myNewText += "name: " + rr + " ";
+}
+console.log(myNewText);
+
