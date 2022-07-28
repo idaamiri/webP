@@ -53,3 +53,19 @@ for (let x = 0; x < 6; x++) {
   myNewText4 += "The number is " + x + " ";
 }
 console.log(myNewText4);
+
+let myNewText5 = "Aida Amiri";
+
+let myNewText6 = "";
+for (let x of myNewText5) {
+  myNewText6 += x + " ";
+}
+console.log(myNewText6);
+
+let myNewText7 = new Array(1, 2, 3);
+
+let myNewText8 = "";
+for (let x of myNewText7) {
+  myNewText8 += x + " ";
+}
+console.log(myNewText8);
