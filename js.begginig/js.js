@@ -393,3 +393,10 @@ for (let rr of newText3) {
 }
 console.log(myNewText);
 
+///
+function goz(a,b){
+  let A=a.toLowerCase()
+  let B=b.toLowerCase()
+  let x=A.indexOf(B)
+  return x;
+}
