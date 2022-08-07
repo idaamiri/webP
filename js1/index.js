@@ -127,3 +127,59 @@ for (const x of x9.values())
     x11 += " Number " + x;
   });
 console.log(x11);
+
+function guz(aa, bb) {
+  let a = aa.toLowerCase();
+  let b = bb.toLowerCase();
+  let c = a.indexOf(b);
+  console.log(c);
+}
+let x12 = "12.3aida";
+console.log(parseInt(x12));
+console.log(parseFloat(x12));
+
+let x13Array = ["amir", "ahmad", "hosein"];
+console.log(x13Array);
+console.log(x13Array[1]);
+
+for (let e = 0; e < 3; e++) {
+  console.log(x13Array[e]);
+}
+let x14 = "";
+for (let j of x13Array) {
+  x14 += j + " is ready ";
+}
+console.log(x14);
+
+let x15 = new Array("Mia", "Sara", "Karen", "Jane");
+console.log(x15.length);
+for (let z = 0; z < x15.length; z++) {
+  console.log(x15[z]);
+}
+
+let x16 = new Array();
+x16[0] = "Ana";
+x16[1] = "Billie";
+x16[2] = "Rita";
+x16[3] = "Alexa";
+x16[4] = 5;
+console.log(x16);
+console.log(x16.valueOf());
+console.log(x16.toString());
+console.log(x16.toLocaleString());
+
+var sCars = "Volvo , BMW , Z4";
+var sCars = sCars.split(",");
+console.log(sCars);
+
+let x17 = [1, 2];
+let x18 = x17.concat(3, 4, 5, 6);
+console.log(x17);
+console.log(x18);
+
+let x19 = ["red", "green", "blue", "purple"];
+console.log(x19.slice(1));
+console.log(x19.slice(2));
+console.log(x19.slice(3));
+
+console.log(x19.slice(1, 3));
