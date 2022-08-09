@@ -183,3 +183,74 @@ console.log(x19.slice(2));
 console.log(x19.slice(3));
 
 console.log(x19.slice(1, 3));
+
+let x20 = new Array();
+x20.push("A");
+x20.push("B");
+x20.push("C");
+x20.push("D");
+x20.push("E");
+x20.push("E");
+console.log(x20);
+
+let x21 = [1, 2, 3, 4];
+x21.pop();
+x21.shift();
+x21.unshift("black", "White");
+console.log(x21);
+// shift unshift adds and deletes at the first of the line
+// pop and push adds and deletes at the end of the line
+console.log(x21.reverse());
+console.log(x21.sort());
+
+let x22 = new Array();
+x22[0] = "A";
+x22[1] = "B";
+x22.push("C");
+console.log(x22);
+
+let x23 = { name: "aida", age: 20, job: "Dr" };
+console.log(x23.name + " is " + x23.age);
+
+let x24 = [
+  { name: "Dayan", age: 22, job: "Cashier" },
+  { name: "Reza", age: 32, job: "Cashier" },
+  { name: "Nima", age: 25, job: "Cashier" },
+  { name: "Sara", age: 43, job: "Cashier" },
+  { name: "Daniel", age: 12, job: "Cashier" },
+  { name: "Eve", age: 32, job: "Cashier" },
+  { name: "Eric", age: 45, job: "Cashier" },
+  { name: "Otis", age: 44, job: "Cashier" },
+];
+console.log(x24[3].age);
+console.log(x24[4].name);
+
+console.log(Math.round(2.6));
+console.log(Math.round(2.5));
+console.log(Math.round(2.3));
+
+console.log(Math.pow(2, 3));
+console.log(Math.pow(5, 3));
+
+console.log(Math.sqrt(16));
+console.log(Math.sqrt(25));
+
+console.log(Math.abs(-25)); // always positive
+
+console.log(Math.ceil(5.6));
+console.log(Math.ceil(5.1));
+console.log(Math.ceil(5.5));
+
+console.log(Math.floor(4.1));
+console.log(Math.floor(4.7));
+console.log(Math.floor(4.5));
+
+console.log(Math.min(23, 41, 22, 1, 56, 78, 125));
+console.log(Math.max(23, 41, 22, 1, 56, 78, 125));
+
+console.log(Math.cos(30));
+console.log(Math.sin(90));
+
+console.log(Math.random());
+
+console.log(Math.floor(Math.random())*100);
