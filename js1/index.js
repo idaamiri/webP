@@ -253,4 +253,19 @@ console.log(Math.sin(90));
 
 console.log(Math.random());
 
-console.log(Math.floor(Math.random())*100);
+console.log(Math.floor(Math.random()) * 100);
+
+let x25 = "Hello World Hello ! ";
+console.log(x25.indexOf("World"));
+console.log(x25.indexOf("؟"));
+console.log(x25.lastIndexOf("Hello"));
+console.log(x25.search("!"));
+console.log(x25.slice(5));
+console.log(x25.substring(5));
+console.log(x25.replace("World", "!"));
+console.log(x25.toUpperCase("World", "!"));
+console.log(x25.toLowerCase("World", "!"));
+console.log(x25.trim());
+console.log(x25.concat("", "programming"));
+console.log(x25.charAt(4));
+console.log(x25.split("/"));
