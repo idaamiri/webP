@@ -303,9 +303,53 @@ function x29(x, y) {
 }
 x29(2.23, 1.02);
 
-function x30(x, y) {
-  for (let i = 0; i < y; i++) {
-    console.log(x + x);
-  }
+//let x30;
+//x30 = 3;
+//let x31;
+//x30 = x31;
+//console.log(x30);
+//console.log(x31);
+
+//let a;
+//a = a + 1;
+//console.log(a);
+
+function x32() {
+  let x33 = [1, 2, 3];
+  x34 = [4, 5, 6];
+  x35 = [7, 8, 9];
+  console.log(x33.concat(x34, x35));
 }
-x30(2,5);
+x32();
+
+let x36 = ["a", "b", "c"];
+let x37 = ["d", "e", "f"];
+let x38 = ["g", "h", "i"];
+console.log(x36.concat(x37, x38));
+
+let x39 = ["aida", "amiri"];
+console.log(x39.concat("", 20));
+
+let x40 = [1, 2, 3];
+console.log(x40.concat(4, [5, 6, 7]));
+
+let x41 = [1, 2, 3];
+console.log(x40.concat(4, 5, 6, 7));
+
+let x42House = ["apartment", "230000", "Home", "343000", "Rent", true];
+x42House.push(" in America ");
+console.log(
+  " At this range " +
+    x42House[0] +
+    " costs: " +
+    x42House[1] +
+    " and " +
+    x42House[2] +
+    " costs: " +
+    x42House[3] +
+    " for " +
+    x42House[4] +
+    " " +
+    x42House[6] +
+    x42House[5]
+);
