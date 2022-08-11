@@ -269,3 +269,43 @@ console.log(x25.trim());
 console.log(x25.concat("", "programming"));
 console.log(x25.charAt(4));
 console.log(x25.split("/"));
+
+let x26 = [" April ", " May ", " June "];
+let x27 = [1, 2, 3, 4];
+console.log(x26.toString());
+
+console.log(x26.join(" & "));
+
+x26.push(" July ");
+console.log(x26);
+
+console.log(x26.pop());
+console.log(x26);
+
+console.log(x26.unshift("March"));
+console.log(x26);
+
+delete x26[0];
+console.log(x26);
+
+console.log(x26.slice(1));
+
+console.log(x26.concat(x27));
+console.log(x26.concat(x27, 5));
+
+function x28(x, y) {
+  console.log(x + y);
+}
+x28(3, 5);
+
+function x29(x, y) {
+  console.log(Math.floor(x + y));
+}
+x29(2.23, 1.02);
+
+function x30(x, y) {
+  for (let i = 0; i < y; i++) {
+    console.log(x + x);
+  }
+}
+x30(2,5);
