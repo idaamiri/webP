@@ -336,7 +336,8 @@ console.log(x40.concat(4, [5, 6, 7]));
 let x41 = [1, 2, 3];
 console.log(x40.concat(4, 5, 6, 7));
 
-let x42House = ["apartment", "230000", "Home", "343000", "Rent", true];
+let x42House = ["230000", "Home", "343000", "Rent", true];
+x42House.unshift(" apartments ");
 x42House.push(" in America ");
 console.log(
   " At this range " +
@@ -353,3 +354,40 @@ console.log(
     x42House[6] +
     x42House[5]
 );
+
+let x43 = [1, 2, 3, 4, 5, 6];
+console.log(x43.splice(1, 4));
+
+let x44 = "";
+let x45 = ["Sara", "Alison", "Lydyia"];
+x45.forEach(x46Func);
+
+function x46Func(a, b) {
+  x44 += " " + b + " : " + a;
+}
+console.log(x44);
+
+let x46 = ["First class", "Economy", "Coach"];
+let x47 = "";
+x46.forEach(x48Func);
+
+function x48Func(a, b) {
+  x47 += " kind " + b + " : " + a;
+}
+console.log(x47);
+
+let x48 = "";
+let x49 = [32, 44, 12, 1, 77, 56, 51];
+x49.forEach(x50Func);
+function x50Func(a) {
+  x48 += a + " ";
+}
+console.log(x48);
+
+let x51 = [0, 1, 2, 3, 4];
+x51.forEach(x52Func);
+function x52Func(a, b, c) {
+  console.log((c[b] = a * 10));
+}
+
+//function x49Func(a,b){console.log()}
