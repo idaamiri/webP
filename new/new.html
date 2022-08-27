@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="new.js"></script>
+    <link rel="stylesheet" href="new.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="alert(50)">Alert</button>
+
+    <button
+      id="neww"
+      onclick="document.getElementById('neww').innerHTML='salam'"
+    >
+      returns to hello
+    </button>
+
+    <button onclick="x3()">to execute a function</button>
+
+    <button onclick="this.innerHTML=('1')">
+      the content of this button returns to 1 with This
+    </button>
+
+    <button onclick="newDay()">to show the day</button>
+
+    <button onclick="x4(2)">execute a function</button>
+    <p class="ida">Hello</p>
+
+    <input type="text" placeholder="Enter your name please" />
+    <button onclick="myValue()" class="name">Value</button>
+
+    <div id="box" onmouseover="mouseOver()" onmouseout="mouseOut()"></div>
+
+    <div id="myBox" onmousedown="mouseDown()" onmouseup="mouseUp()"></div>
+
+    <button onclick="myDay()">to show the date</button>
+
+    <input type="text" onfocus="myFocus()"  id="ida3" />
+  </body>
+</html>

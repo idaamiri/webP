@@ -390,4 +390,26 @@ function x52Func(a, b, c) {
   console.log((c[b] = a * 10));
 }
 
+function newChallenge() {
+  let a = [1, 2, 3, 4, 5, 6, 7];
+  let b = [7, 8, 9, 10, 11, 12, 13, 14];
+  for (let x = 0; x < a.length; x++) {
+    for (let i = 0; i < b.length; i++) {
+      if ([x] == [i]) {
+        console.log("True");
+      } else {
+        ("False");
+      }
+    }
+  }
+}
+newChallenge();
+//if (a.valueOf() == b.valueOf) {
+//console.log("True");
+//} else {
+//console.log("False");
+//}
+//}
+
 //function x49Func(a,b){console.log()}
+
