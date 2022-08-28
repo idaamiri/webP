@@ -37,3 +37,46 @@ x11 = " is hard ";
 x12 = " learning to code ";
 x12 += x11;
 console.log(x12);
+
+let x13 = " Hello ";
+console.log(x13.length);
+console.log(x13[0]);
+console.log(x13[1]);
+
+let x14 = "jello world";
+// x14[0] = "H";
+x14 = "Hello world";
+console.log(x14);
+
+let x15 = "ham";
+let x16 = x15[x15.length - 1];
+console.log(x16);
+
+let x17 = "true";
+let x18 = x17[x17.length - 4];
+console.log(x18);
+
+function cars(myFirstCar, mySecondCar, myThirdCar) {
+  let x19 = "";
+  x19 +=
+    " my new cars are " +
+    myFirstCar +
+    " and " +
+    mySecondCar +
+    " and " +
+    myThirdCar;
+  return x19;
+}
+console.log(cars("Volvo", "BMW", "Ferari"));
+console.log(cars("Z4", "Lexus", "Tesla"));
+
+let x20 = [
+  ["Aida", 4],
+  ["Sara", 5],
+];
+console.log(x20[0]);
+console.log(x20[1]);
+
+let x21 = [10, 40, 30];
+x21[1] = 20;
+console.log(x21);
