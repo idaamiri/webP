@@ -80,3 +80,26 @@ console.log(x20[1]);
 let x21 = [10, 40, 30];
 x21[1] = 20;
 console.log(x21);
+
+let x22 = [
+  [2, 33, 43],
+  [51, 98, 93],
+  [[41, 22, 90], 81, 15],
+];
+let x23 = x22[1][2];
+console.log(x23);
+
+let x24 = ["Aida", "Jane"];
+x24.push(["Sara", "Jackob"]);
+console.log(x24);
+
+let x25 = [1, 2, 3];
+x25.push(4, 5);
+console.log(x25);
+
+let x26 = [
+  ["John", 43],
+  ["Max", 17],
+];
+x26.push(["David", 74]);
+console.log(x26);
