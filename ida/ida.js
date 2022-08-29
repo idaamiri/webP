@@ -137,3 +137,48 @@ let x31 = [
 x31.shift();
 x31.unshift("Mike", 20);
 console.log(x31);
+
+function x32() {
+  console.log("hello world");
+}
+x32();
+
+function x33(a, b) {
+  console.log(a * b);
+}
+x33(2, 3);
+
+function x34() {
+  var x35 = 5;
+  console.log(x35);
+}
+x34();
+//console.log(x35);
+
+function x35() {
+  let x36 = 5;
+  console.log(x36);
+}
+x35();
+console.log(x35);
+
+var x36 = "T-shirt";
+function x37() {
+  var x36 = "sweater";
+  console.log(x36);
+}
+x37();
+console.log(x36);
+
+let x38 = "skirt";
+function x39() {
+  let x38 = "pants";
+  console.log(x38);
+}
+x39();
+console.log(x38);
+
+function x40(num) {
+  return num - 7;
+}
+console.log(x40(10));
