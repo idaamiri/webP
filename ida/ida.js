@@ -103,3 +103,37 @@ let x26 = [
 ];
 x26.push(["David", 74]);
 console.log(x26);
+
+//Write a function secondIndexOf, taking two strings and determining the second occurrence of the second string in the first string.
+//If the search string does not occur twice, -1 should be returned.
+
+//Example: secondIndexOf('White Rabbit', 'it') should return 10.
+
+//function secondIndexOf(a,b){}
+
+let x27 = [1, 2, 3];
+x27.pop();
+console.log(x27);
+
+let x28 = [1, 2, 3];
+x28.shift();
+console.log(x28);
+
+let x29 = [
+  ["aida", 20],
+  ["honey", 47],
+];
+x29.shift();
+console.log(x29);
+
+let x30 = ["a", "b", "c"];
+x30.unshift("d");
+console.log(x30);
+
+let x31 = [
+  ["max", 23],
+  ["Jade", 22],
+];
+x31.shift();
+x31.unshift("Mike", 20);
+console.log(x31);
