@@ -182,3 +182,69 @@ function x40(num) {
   return num - 7;
 }
 console.log(x40(10));
+
+var x41 = 0;
+
+function x42(num) {
+  return num * 2 + 3;
+}
+x41 = x42(5);
+console.log(x41);
+
+function x43(a, b) {
+  a.push(b);
+}
+
+let x44 = [1, 2, 3, 4, 5];
+
+console.log("before " + JSON.stringify(x44));
+
+//function x(s, j) {
+//s = [1, 2, 3, 4];
+// j = [4, 5, 6, 7];
+//  if (s == j) {
+//  console.log("yes");
+// } else {
+//  console.log("no");
+// }
+//}
+
+function x45(a) {
+  if (a) {
+    return "yes";
+  }
+  return "no";
+}
+console.log(x45(true));
+
+function x46(h) {
+  if (h == 12) {
+    return "right";
+  }
+  return "false";
+}
+console.log(x46(10));
+
+function x46(s) {
+  if (s === 4) {
+    return "right";
+  }
+  return "false";
+}
+console.log(x46("4"));
+
+function x47(a) {
+  if (a != 99) {
+    return "equal";
+  }
+  return "not equal";
+}
+console.log(x47(100));
+
+function x48(a) {
+  if (a !== 99) {
+    return "equal";
+  }
+  return "not equal";
+}
+console.log(x48(66));
