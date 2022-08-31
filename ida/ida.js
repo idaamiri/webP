@@ -304,3 +304,43 @@ function onesDigit(a) {
   return a % 100;
 }
 console.log(onesDigit(2674));
+
+function mean(a, b) {
+  return (a + b) / 2;
+}
+console.log(mean(1, 2));
+
+function hypotenuse(a, b) {
+  let aa = Math.pow(a, 2) + Math.pow(b, 2);
+  return Math.sqrt(aa);
+}
+console.log(hypotenuse(3, 4));
+
+function midrange(a, b, c) {
+  return (Math.max(a, b, c) + Math.min(a, b, c)) / 2;
+}
+console.log(midrange(3, 9, 1));
+
+function area(a) {
+  let aa = Math.pow(a, 2);
+  return aa * Math.PI;
+}
+console.log(area(2));
+
+let x52 = Math.round(5.49);
+console.log(x52);
+
+let x53 = Math.round(4.5);
+console.log(x53);
+
+let x54 = Math.floor(5.99);
+console.log(x54);
+
+let x55 = Math.ceil(4.01);
+console.log(x55);
+
+function round100(a) {
+  return Math.round(a / 100) * 100;
+}
+console.log(round100(1749));
+// should return 1700;
