@@ -248,3 +248,59 @@ function x48(a) {
   return "not equal";
 }
 console.log(x48(66));
+
+function x49(a) {
+  let x50 = "";
+  switch (a) {
+    case 1:
+      x50 = "Alpha";
+      break;
+
+    case 2:
+      x50 = "Beta";
+      break;
+
+    case 3:
+      x50 = "Omega";
+      break;
+  }
+  return x50;
+}
+console.log(x49(2));
+
+function x51(val) {
+  let answer = "";
+
+  switch (val) {
+    case "a":
+      answer = "alpha";
+      break;
+    case "b":
+      answer = "beta";
+      break;
+    case "c":
+      answer = "gamma";
+      break;
+    default:
+      answer = "none";
+      break;
+  }
+  return answer;
+}
+console.log(x51("c"));
+console.log(x51("d"));
+
+function add(a, b) {
+  return a + b;
+}
+add(1, 2);
+
+function toFahrenheit(a) {
+  return 1.8 * a + 32;
+}
+console.log(2);
+
+function onesDigit(a) {
+  return a % 100;
+}
+console.log(onesDigit(2674));
