@@ -344,3 +344,61 @@ function round100(a) {
 }
 console.log(round100(1749));
 // should return 1700;
+
+// Write a function dice that returns like a dice a random number between 1 and 6
+function dice() {
+  let a = Math.random(0, 1);
+  let b = Math.random(1, 2);
+  let c = Math.random(2, 3);
+  let d = Math.random(3, 4);
+  let e = Math.random(4, 5);
+  let f = Math.random(5, 6);
+  let g = Math.random(6, 7);
+
+  let z = a + b + c + d + e + f + g;
+  return Math.floor(z);
+}
+console.log(dice());
+
+function dice() {
+  let a = Math.floor(Math.random(0, 1));
+  let b = Math.floor(Math.random(1, 2));
+  let c = Math.floor(Math.random(2, 3));
+  let d = Math.floor(Math.random(3, 4));
+  let e = Math.floor(Math.random(4, 5));
+  let f = Math.floor(Math.random(5, 6));
+  let g = Math.floor(Math.random(6, 7));
+
+  let z = a + b + c + d + e + f + g;
+  return z;
+}
+console.log(dice());
+
+function dice() {
+  let a = Math.ceil(Math.random(0, 1));
+  let b = Math.round(Math.random(0, 1));
+  let c = Math.round(Math.random(0, 1));
+  let d = Math.round(Math.random(0, 1));
+  let e = Math.round(Math.random(0, 1));
+  let f = Math.round(Math.random(0, 1));
+
+  let z = a + b + c + d + e + f;
+  return z;
+}
+console.log(dice());
+
+function dice() {
+  let aaa = Math.floor(Math.random() * 6) + 1;
+  return aaa;
+}
+console.log(dice());
+
+let n4 = parseInt("19 Grad", 10);
+console.log(n4);
+
+function add(a, b) {
+  let s = parseInt(a, 10);
+  let x = parseInt(b, 10);
+  return s + x;
+}
+console.log(add("102+17",10));
