@@ -407,3 +407,6 @@ function nor(a, b) {
   return !x;
 }
 console.log(nor(false, false));
+
+let m = false || true;
+console.log(m);
