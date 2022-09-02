@@ -396,9 +396,14 @@ console.log(dice());
 let n4 = parseInt("19 Grad", 10);
 console.log(n4);
 
-function add(a, b) {
-  let s = parseInt(a, 10);
-  let x = parseInt(b, 10);
-  return s + x;
+function nand(a, b) {
+  let x = a && b;
+  return !x;
 }
-console.log(add("102+17",10));
+console.log(nand(true, true));
+
+function nor(a, b) {
+  let x = a || b;
+  return !x;
+}
+console.log(nor(false, false));
