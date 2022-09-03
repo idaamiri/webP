@@ -26,3 +26,27 @@ function equals(a, b) {
   return a === b;
 }
 console.log(equals(1, 1));
+
+function equals(a, b, c) {
+  let mm = a === b && b === c;
+  return mm;
+}
+console.log(equals(1, 1, 1));
+
+function isEven(a) {
+  let c = a % 2;
+  return c === 0;
+}
+console.log(isEven(2));
+
+function unequal(a, b, c) {
+  let y = a !== b && a !== c && b !== c;
+  return y;
+}
+console.log(unequal(1, 2, 3));
+
+function isThreeDigit(a) {
+  let r = a >= 100 && a < 1000;
+  return r;
+}
+console.log(isThreeDigit(500));
