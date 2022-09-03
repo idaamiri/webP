@@ -50,3 +50,51 @@ function isThreeDigit(a) {
   return r;
 }
 console.log(isThreeDigit(500));
+
+function equals(a, b) {
+  if (a === b) {
+    return "EQUAL";
+  }
+  if (a !== b) {
+    return "UNEQUAL";
+  }
+}
+console.log(equals(1, 2));
+
+function repdigit(a) {
+  if (a % 11 === 0) {
+    return "Repdigit!";
+  }
+  return "No Repdigit!";
+}
+console.log(repdigit(23));
+
+function repdigit(a) {
+  let q = a % 10;
+  let z = Math.floor(a / 10);
+  if (q === z) {
+    return "Repdigit!";
+  }
+  return "No Repdigit!";
+}
+console.log(repdigit(11));
+
+function addWithSurcharge(a, b) {
+  let surcharge = 0;
+  if (a <= 10) {
+    surcharge += 1;
+  } else {
+    if (a > 10) {
+      surcharge += 2;
+    }
+  }
+  if (b <= 10) {
+    surcharge += 1;
+  } else {
+    if (b > 10) {
+      surcharge += 2;
+    }
+  }
+  return surcharge + a + b;
+}
+console.log(addWithSurcharge(5, 15));
