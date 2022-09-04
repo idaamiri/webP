@@ -98,3 +98,42 @@ function addWithSurcharge(a, b) {
   return surcharge + a + b;
 }
 console.log(addWithSurcharge(5, 15));
+
+function addWithSurcharge(a, b) {
+  let surcharge = 0;
+  if (a <= 10) {
+    surcharge += 1;
+  } else if (a > 10 && a <= 20) {
+    surcharge += 2;
+  } else {
+    surcharge += 3;
+  }
+  if (b <= 10) {
+    surcharge += 1;
+  } else if (b > 10 && b <= 20) {
+    surcharge += 2;
+  } else {
+    surcharge += 3;
+  }
+  return a + b + surcharge;
+}
+console.log(addWithSurcharge(10, 30));
+
+function toArray(a, b) {
+  return [a, b];
+}
+console.log(5, 9);
+
+function getFirstElement([a, b]) {
+  let lan = [a, b];
+  lan[0] = a;
+  lan[1] = b;
+  return lan[0];
+}
+console.log(getFirstElement([1, 2]));
+
+function setFirstElement(myNewArr, c) {
+  myNewArr[0] = c;
+  return myNewArr;
+}
+console.log(setFirstElement([1, 2], 3));
