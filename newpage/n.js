@@ -146,7 +146,8 @@ function myChallenge(firstArray, secondArray) {
       if (firstArray[x] in firstArray === secondArray[y] in secondArray) {
         return "yes";
       } else if (
-        firstArray[x] in firstArray !== secondArray[y] in secondArray
+        firstArray[x] in firstArray !==
+        secondArray[y] in secondArray
       ) {
         return "no";
       }
@@ -154,3 +155,28 @@ function myChallenge(firstArray, secondArray) {
   }
 }
 console.log(myChallenge());
+
+function getLastElement(myArr) {
+  let newX = myArr.length - 1;
+  return myArr[newX];
+}
+console.log(getLastElement([1, 2]));
+
+function x9() {
+  let newArray = [1, 2, 3, 4];
+  let mm = newArray.length - 1;
+  return newArray[mm];
+}
+console.log(x9());
+
+function sort(arrays) {
+  return arrays.sort();
+}
+console.log(sort([2, 3, 1]));
+
+function rotate(arrayS) {
+  let dd = arrayS.shift();
+  arrayS.push(dd);
+  return arrayS;
+}
+console.log(rotate(["a", "b", "c"]));
