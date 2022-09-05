@@ -180,3 +180,33 @@ function rotate(arrayS) {
   return arrayS;
 }
 console.log(rotate(["a", "b", "c"]));
+
+function add(myArrays, a) {
+  myArrays = [1, 2, 3];
+  let i1 = myArrays.indexOf(5);
+  myArrays.push(a);
+  return myArrays;
+}
+console.log(add([], 5));
+//adds an element to the end of an array.
+//However, the element should only be added if it is not already in the array.
+
+function add(newArrr, a) {
+  let h = newArrr.indexOf(a);
+  if (h === -1) {
+    newArrr.push(a);
+    return newArrr;
+  }
+}
+console.log(add([1, 2], 2));
+
+function concatUp(fArray, sArray) {
+  if (fArray.length >= sArray.length) {
+    return sArray.concat(fArray);
+  } else if (fArray.length === sArray.length) {
+    return fArray.concat(sArray);
+  } else if (fArray.length < sArray.length) {
+    return fArray.concat(sArray);
+  }
+}
+console.log(concatUp([5, 7], [6]));
