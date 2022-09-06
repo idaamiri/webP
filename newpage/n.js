@@ -210,3 +210,15 @@ function concatUp(fArray, sArray) {
   }
 }
 console.log(concatUp([5, 7], [6]));
+
+function halve(newArr) {
+  newArr.length / 2;
+}
+console.log(halve([1, 2, 3, 4]));
+
+//copies the first half of an array. With an odd number of array elements, the middle element should belong to the first half.
+
+let alphabet = ["a", "b", "c", "d"];
+console.log(alphabet.join(" & "));
+
+
