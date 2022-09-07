@@ -30,15 +30,6 @@ console.log(typeof age);
 let fName;
 console.log(fName);
 
-let student = {
-  name: "ali",
-  age: 35,
-  job: "asshole",
-};
-console.log(student);
-console.log(student["job"]);
-console.log(student.age);
-
 let emploees = ["mahmood", "hamed"];
 console.log(emploees);
 console.log(emploees[0]);
@@ -394,9 +385,9 @@ for (let rr of newText3) {
 console.log(myNewText);
 
 ///
-function goz(a,b){
-  let A=a.toLowerCase()
-  let B=b.toLowerCase()
-  let x=A.indexOf(B)
+function goz(a, b) {
+  let A = a.toLowerCase();
+  let B = b.toLowerCase();
+  let x = A.indexOf(B);
   return x;
 }

@@ -75,3 +75,29 @@ console.log(add([1, 2], 3));
 
 // that adds an element to the end of an array.
 // However, the element should only be added if it is not already in the array.
+
+let abcd = ["a", "b", "c", "d"];
+console.log(abcd.slice(0, 2));
+console.log(abcd.slice(1, 3));
+
+function myOddNum() {
+  myArr = [1, 2, 3, 4, 5, 6];
+  for (let i = 0; i < myArr.length; i++) {
+    if (myArr[i] % 2 === 0) {
+      console.log(myArr[i]);
+    }
+  }
+}
+myOddNum();
+
+function halve(newArr) {
+  if (newArr.length % 2 === 1) {
+    return newArr.slice(0, newArr.length / 2 + 1);
+  } else if (newArr.length % 2 === 0) {
+    return newArr.slice(0, newArr.length / 2);
+  }
+}
+console.log(halve([1, 2, 3, 4]));
+
+//copies the first half of an array. With an odd
+// number of array elements, the middle element should belong to the first half.
