@@ -156,7 +156,19 @@ function cutComment(hi) {
   if (h === -1) {
     return null;
   } else if (h !== -1) {
-    return (hi.substr(h)).trim();
+    return hi.substr(h).trim();
   }
 }
 console.log(cutComment("let foo; // bar"));
+
+function addTo(a) {
+  let sum = 0;
+  for (let i = 0; i <= a; i++) {
+    sum = sum + i;
+  }
+  if (a === 1) {
+    return a;
+  }
+  return sum;
+}
+console.log(addTo(3));
