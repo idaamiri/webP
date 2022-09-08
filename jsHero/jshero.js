@@ -133,3 +133,30 @@ function newFlat(newA) {
   return m;
 }
 console.log(newFlat());
+
+function median(newArray) {
+  if (newArray.length % 2 === 1) {
+    let h = (newArray.length - 1) / 2;
+    return;
+  }
+}
+console.log(median([1, 2, 10]));
+
+function hello(iii) {
+  if (iii === undefined) {
+    return "Hello world!";
+  } else {
+    return "Hello " + iii + "!";
+  }
+}
+console.log(hello("Nala"));
+
+function cutComment(hi) {
+  let h = hi.indexOf(" ", 9);
+  if (h === -1) {
+    return null;
+  } else if (h !== -1) {
+    return (hi.substr(h)).trim();
+  }
+}
+console.log(cutComment("let foo; // bar"));
