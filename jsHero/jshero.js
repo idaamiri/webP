@@ -101,3 +101,35 @@ console.log(halve([1, 2, 3, 4]));
 
 //copies the first half of an array. With an odd
 // number of array elements, the middle element should belong to the first half.
+
+function list(array1) {
+  array1.join(",");
+  return array1;
+}
+console.log(list(["Huey", "Dewey", "Louie"]));
+
+let teams = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+console.log(teams[0][1]);
+
+function flat(ii) {
+  let a = [4, 9, 2];
+  let b = [3, 5, 7];
+  let c = [8, 1, 6];
+  return [a, b, c];
+}
+console.log(flat());
+//[4, 9, 2, 3, 5, 7, 8, 1, 6]
+
+function newFlat(newA) {
+  let m = [
+    [4, 9, 2],
+    [3, 5, 7],
+    [8, 1, 6],
+  ];
+  return m;
+}
+console.log(newFlat());
