@@ -190,3 +190,31 @@ function newFactorial(a) {
   return result;
 }
 console.log(newFactorial(3));
+
+function mean(myArray) {
+  let res = 0;
+  for (let a = 0; a < myArray.length; a++) {
+    res += myArray[a];
+  }
+  return res / myArray.length;
+}
+console.log(mean([1, 2, 3]));
+
+console.log("hi");
+
+function ida(a) {
+  let h = "s";
+
+  if (h.length === a) {
+    return "hi";
+  }
+}
+console.log(ida(1));
+
+//function spaces(a) {
+//let x = "L";
+// while (0 <= a) {
+// return (x += "L") ;
+// }
+//}
+//console.log(spaces(2));
