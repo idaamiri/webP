@@ -172,3 +172,21 @@ function addTo(a) {
   return sum;
 }
 console.log(addTo(3));
+
+function factorial(n) {
+  let m = 1;
+  for (let i = 1; i <= n; i++) {
+    m *= i;
+  }
+  return m;
+}
+console.log(factorial(3));
+
+function newFactorial(a) {
+  let result = 0;
+  for (let m = 0; m <= a; m++) {
+    result *= m;
+  }
+  return result;
+}
+console.log(newFactorial(3));
