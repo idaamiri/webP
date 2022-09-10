@@ -218,3 +218,42 @@ console.log(ida(1));
 // }
 //}
 //console.log(spaces(2));
+
+function lcm(a, b) {
+  let m = a.b;
+  let h = m % a;
+  let c = m % b;
+
+  do {
+    return m;
+  } while (h === 0 && c === 0);
+}
+console.log(lcm(4, 6));
+
+function shout(a) {
+  let b = a + a;
+  console.log(b);
+  return b;
+}
+console.log(shout("Fire"));
+
+function toCase(a) {
+  let m = a.toLowerCase();
+  let n = a.toUpperCase();
+  return m + "-" + n;
+}
+console.log(toCase("Mthatha"));
+
+function shortcut(a, b) {
+  return a.charAt(0) + b.charAt(0);
+}
+console.log(shortcut("Amnesty", "International"));
+
+function normalize(a) {
+  let h = a.charAt(2);
+  
+  let s = a.replace(h, "/");
+ 
+  return s;
+}
+console.log(normalize("20-05-2017"));
