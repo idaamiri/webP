@@ -251,9 +251,65 @@ console.log(shortcut("Amnesty", "International"));
 
 function normalize(a) {
   let h = a.charAt(2);
-  
+
   let s = a.replace(h, "/");
- 
+
   return s;
 }
 console.log(normalize("20-05-2017"));
+
+function firstChar(a) {
+  let r = a.trim();
+  return r.charAt(0);
+}
+console.log(firstChar(" Rosa Parks "));
+
+function indexOfIgnoreCase(a, b) {
+  let m = a.toLowerCase();
+  let n = b.toLowerCase();
+  return m.indexOf(n);
+}
+console.log(indexOfIgnoreCase("bit", "it"));
+
+function secondIndexOf(a, b) {
+  let s = a.indexOf(b);
+  return a.indexOf(b, s + 1);
+}
+console.log(secondIndexOf("White Rabbit", "it"));
+
+// substr(start, number of words)
+
+function firstWord(a) {
+  let m = a.indexOf(" ");
+  return a.substr(0, m);
+}
+console.log(firstWord("see and stop"));
+
+function normalize(y) {
+  let a = y.indexOf("-");
+  let c = y.substr(a, 1);
+  let b = y.indexOf("-", a + 1);
+  let d = y.substr(b, 1);
+  if (c === "-") {
+    return y.replace(c, "/");
+  } else if (d === "-") {
+    return y.replace(d, "/");
+  }
+  return y;
+}
+console.log(normalize("20-05-2017"));
+
+let a = "fsdgfsg";
+console.log(a.charAt(0));
+
+function normal(a) {
+  let m = a.charAt(2);
+  let n = a.charAt(5);
+  if (m === "-") {
+    return a.replace(m, "/");
+  } else if (n === "-") {
+    return a.replace(n, "/");
+  }
+  return a;
+}
+console.log(normal("20-05-2017"));
