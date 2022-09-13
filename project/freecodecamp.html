@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="freecodecamp.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,17 +15,19 @@
     <button onclick="increment()" id="inc-button">increment</button>
 
     <button onclick="save()" id="save=btn">save</button>
+
     <p id="save-el">previous entires:</p>
 
     <script>
       let myCount = document.getElementById("new-p");
+
       let saveEl = document.getElementById("save-el");
 
       let count = 0;
 
       function increment() {
         count += 1;
-        myCount.innerText = count;
+        myCount.textContent = count;
       }
       increment();
 
@@ -34,7 +35,9 @@
 
       function save() {
         let countStr = count + " - ";
-        saveEl.innerText == countStr;
+        saveEl.textContent += countStr;
+        myCount.textContent = 0;
+        Count = 0;
       }
       console.log(save());
     </script>
