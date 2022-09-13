@@ -14,5 +14,29 @@
     <h2 id="new-p">0</h2>
 
     <button onclick="increment()" id="inc-button">increment</button>
+
+    <button onclick="save()" id="save=btn">save</button>
+    <p id="save-el">previous entires:</p>
+
+    <script>
+      let myCount = document.getElementById("new-p");
+      let saveEl = document.getElementById("save-el");
+
+      let count = 0;
+
+      function increment() {
+        count += 1;
+        myCount.innerText = count;
+      }
+      increment();
+
+      let saveBtn = document.getElementById("save-btn");
+
+      function save() {
+        let countStr = count + " - ";
+        saveEl.innerText == countStr;
+      }
+      console.log(save());
+    </script>
   </body>
 </html>
