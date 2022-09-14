@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="counterapp.css" />
+  </head>
+  <body>
+    <h1>people entered:</h1>
+    <h2 id="number-of-people">0</h2>
+    <button id="add-btn" onclick="add()">add</button>
+    <button id="save-btn" onclick="save()">save</button>
+    <p id="last-E">last entries</p>
+    <script>
+      let addId = document.getElementById("number-of-people");
+
+      let counter = 0;
+      function add() {
+        counter += 1;
+        addId.textContent = counter;
+      }
+      add();
+
+      let lastE = document.getElementById("last-E");
+
+      function save() {
+        let saving = counter + "-";
+        lastE.textContent += saving;
+        addId.textContent = 0;
+        counter = 0;
+      }
+      save();
+    </script>
+  </body>
+</html>
