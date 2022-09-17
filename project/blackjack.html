@@ -13,7 +13,9 @@
     <p id="cards">Cards:</p>
     <p id="sum">Sum:</p>
     <button onclick="startgame()">Start Game</button>
+    <button onclick="newCard()">New Card</button>
     <script>
+      let cards = [firstCard, secondCard];
       let firstCard = 6;
       let secondCard = 9;
       let sum = firstCard + secondCard;
@@ -26,9 +28,13 @@
       let mySum = document.querySelector("#sum");
 
       function startgame() {
-        mySum.textContent = "sum: " + sum;
+        renderGame();
+      }
 
-        myCards.textContent = firstCard + " and " + secondCard;
+      function renderGame() {
+        mySum.textContent = "sum: " + cards[0] + " " + cards[1];
+
+        myCards.textContent = "Cards:" + " " + firstCard + " and " + secondCard;
 
         if (sum < 21) {
           message = "do yo want a new card";
@@ -42,7 +48,11 @@
         messageEl.textContent = message;
       }
 
-      console.log(message);
+      function newCard() {
+        let card = 4;
+        sum += card;
+      }
+      newCard();
     </script>
   </body>
 </html>
