@@ -8,22 +8,38 @@
   </head>
   <style></style>
   <body>
+    <h1>BLACKJACK</h1>
+    <p id="message-el">Want to play a round?</p>
+    <p id="cards">Cards:</p>
+    <p id="sum">Sum:</p>
+    <button onclick="startgame()">Start Game</button>
     <script>
       let firstCard = 6;
-      let secondCard = 29;
+      let secondCard = 9;
       let sum = firstCard + secondCard;
       let hasBlackJack = false;
       let isAlive = true;
       let message = "";
 
-      if (sum < 21) {
-        message = "do yo want a new card";
-      } else if (sum === 21) {
-        message = "you have got blackjack";
-        hasBlackJack = true;
-      } else {
-        message = "you are out of the game";
-        isAlive = false;
+      let messageEl = document.getElementById("message-el");
+      let myCards = document.querySelector("#cards");
+      let mySum = document.querySelector("#sum");
+
+      function startgame() {
+        mySum.textContent = "sum: " + sum;
+
+        myCards.textContent = firstCard + " and " + secondCard;
+
+        if (sum < 21) {
+          message = "do yo want a new card";
+        } else if (sum === 21) {
+          message = "you have got blackjack";
+          hasBlackJack = true;
+        } else {
+          message = "you are out of the game";
+          isAlive = false;
+        }
+        messageEl.textContent = message;
       }
 
       console.log(message);
