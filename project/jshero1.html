@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title></head
+  ><style></style>
+  <body>
+    <script>
+      function nor(a, b) {
+        let x = a || b;
+        return !x;
+      }
+      console.log(nor(false, true));
+
+      function lcm(a, b) {
+        let aa = 0;
+        let bb;
+        let cc;
+
+        do {
+          aa++;
+          bb = aa % a;
+          cc = aa % b;
+        } while (bb !== 0 || cc !== 0);
+
+        return aa;
+      }
+      console.log(lcm(4, 6));
+
+      function myWords(words) {
+        if (words.length === 0) {
+          return "";
+        }
+        if (words.length === 1) {
+          return words[0];
+        }
+      }
+
+      function add(a) {
+        let m = parseInt(a, 10);
+        let y = a.indexOf("+");
+        let x = a.substr(y + 1);
+        let n = parseInt(x, 10);
+        return m + n;
+      }
+      console.log(add("102+17"));
+    </script>
+  </body>
+</html>
