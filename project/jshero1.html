@@ -7,6 +7,9 @@
     <title>Document</title></head
   ><style></style>
   <body>
+    <h1 id="click">click on the button</h1>
+    <button onclick="changeEl()">change word</button>
+    <h3 id="number-El">55</h3>
     <script>
       function nor(a, b) {
         let x = a || b;
@@ -46,6 +49,56 @@
         return m + n;
       }
       console.log(add("102+17"));
+
+      function short(a, b) {
+        return a.charAt(0) + b.charAt(0);
+      }
+      console.log(short("Am", "Inter"));
+
+      function x1(a, b) {
+        let m = a.indexOf(b);
+        return a.indexOf(b, m + 1);
+      }
+      console.log(x1("White Rabbit", "it"));
+
+      function firstWord(a) {
+        let x = a.indexOf(" ");
+        return a.substr(0, x);
+      }
+      console.log(firstWord("see and stop"));
+
+      function no(a) {
+        return a.replace("java", "ecma");
+      }
+      console.log(no("javascript"));
+
+      function normalize(x) {
+        let m = x.substr(2, 1);
+        return m.replace(m, "/");
+      }
+      console.log(normalize("20-05-2017"));
+
+      function spaces(n) {
+        let a = "2";
+
+        while (a.length === n) {
+          return (a += "2") * n;
+        }
+      }
+      console.log(spaces(1));
+
+      let a = document.getElementById("number-El");
+      let b = document.getElementById("click");
+
+      function changeEl() {
+        a.textContent = Math.round(Math.random());
+
+        if (a.textContent !== 0) {
+          b.textContent = " you won";
+        } else if (a.textContent === 0) {
+          b.textContent = "you lost";
+        }
+      }
     </script>
   </body>
 </html>
