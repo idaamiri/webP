@@ -79,11 +79,12 @@
       console.log(normalize("20-05-2017"));
 
       function spaces(n) {
-        let a = "2";
+        let a = "";
 
-        while (a.length === n) {
-          return (a += "2") * n;
+        while (a === n) {
+          a.length += n;
         }
+        return a;
       }
       console.log(spaces(1));
 
@@ -99,6 +100,59 @@
           b.textContent = "you lost";
         }
       }
+
+      // function replace(a) {
+      //let result = a.replace("-", "/");
+      // let b = a.indexOf("-");
+      // let c = a.indexOf("-", b + 1).replace("-", "/");
+      // return c;
+      //}
+      // console.log(replace("23-04-1975"));
+
+      function newFunc() {
+        console.log("welcome");
+      }
+      function newFunc1() {
+        newFunc();
+      }
+      newFunc1();
+
+      let myCar = "Lnad Rover";
+      let PayCheck = "33500";
+
+      function newCar() {
+        myCar = "BMW";
+        PayCheck = "23500";
+        console.log(
+          "You need" + " " + PayCheck + "$ " + "to buy" + " " + myCar
+        );
+      }
+      newCar();
+      console.log("You need" + " " + PayCheck + "$ " + "to buy" + " " + myCar);
+
+      function newF() {
+        console.log("welcome to this site");
+      }
+      function pictureF() {
+        console.log("go to the picture section");
+      }
+      function linkF() {
+        console.log("go to the link section");
+      }
+      function myMassage() {
+        newF();
+        pictureF();
+        linkF();
+      }
+      myMassage();
+
+      function spaces(n) {
+        let x = "";
+        while (x.length  <= 1) {
+         return x += "";
+        }
+      }
+      console.log(spaces(1));
     </script>
   </body>
 </html>
