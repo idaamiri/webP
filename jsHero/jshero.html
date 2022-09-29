@@ -7,5 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body style="background-color: rgb(0, 174, 255)">
+    <h1>active element</h1>
+    <input type="text" value="input field" name="" id="" />
+    <button onclick="myFunc1()">click here</button>
+    <p id="p1"></p>
+    <br />
+    <br />
+    <button id="newB">click here</button>
+    <script>
+      function myFunc1() {
+        let a = document.activeElement.tagName;
+        let b = document.querySelector("#p1");
+        b.textContent += a;
+      }
+      console.log(myFunc1());
+
+      document.body.style.backgroundColor = "yellow";
+
+      let newB = document.querySelector("#newB");
+
+      newB = document.addEventListener("click", function () {
+        const n1 = window.open();
+        n1.document.open();
+        n1.document.write("welcome");
+        n1.document.close();
+      });
+    </script>
+  </body>
 </html>
