@@ -9,6 +9,12 @@
     <script src="color.js"></script>
   </head>
   <body>
+    <h3 id="date"></h3>
+    <p id="para"></p>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <button id="newBtn">click here</button>
+    <button id="newBtn1">click here</button>
     <nav>
       <div class="nav-center">
         <h4>color flipper</h4>
@@ -21,9 +27,51 @@
 
     <main>
       <div class="container">
-        <h2>background color: <span class="color" ></span></h2>
+        <h2>background color: <span class="color"></span></h2>
         <button class="btn-hero" id="btn">click me</button>
       </div>
     </main>
+    <script>
+      const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+
+      const btn = document.getElementById("btn");
+
+      const color = document.querySelector(".color");
+      btn.addEventListener("click", function () {
+        const randomNumber = 2;
+        document.body.style.backgroundColor = colors[randomNumber];
+        color.textContent = colors[randomNumber];
+      });
+
+      let m = new Date();
+      document.querySelector("#date").textContent = " today is " + m;
+
+      let a = document.querySelector("#para");
+      setInterval(function () {
+        a.textContent += "hello";
+      }, 2000);
+
+      setInterval(myDisplay, 1000);
+
+      function myDisplay() {
+        document.querySelector("#para1").textContent += "welcome";
+      }
+
+      let myInterval = setInterval(timer(), 1000);
+      let h = document.querySelector("#newBtn");
+      h.addEventListener("onclick", timer());
+
+      function timer() {
+        let day = new Date();
+        document.querySelector("#para2").textContent = day.toLocaleTimeString();
+      }
+
+      let s = document.querySelector("#newBtb1");
+      s.addEventListener("onclick", stopFunc());
+
+      function stopFunc() {
+        clearInterval(myInterval);
+      }
+    </script>
   </body>
 </html>
