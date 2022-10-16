@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="color.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="color.js"></script>
+    <script src="n.js"></script>
   </head>
   <body>
     <h3 id="date"></h3>
@@ -31,6 +30,32 @@
         <button class="btn-hero" id="btn">click me</button>
       </div>
     </main>
+    <p class="fEl">1</p>
+
+    <p class="fifthEl">5</p>
+
+    <p id="lastName">hi</p>
+
+    <form action="" method="get" id="form">
+      <div id="error">
+        <label for="First name">First name</label>
+        <input type="Firstname" id="name" required />
+      </div>
+      <div>
+        <label for="Last name">Last name</label>
+        <input type="Last name" id="Lastname" required />
+      </div>
+      <div>
+        <label for="Email">Email</label>
+        <input type="Email" id="Email" required />
+      </div>
+      <div>
+        <label for="Password">Password</label>
+        <input type="Password" id="Password" required />
+        <br />
+        <button type="submit">submit</button>
+      </div>
+    </form>
     <script>
       const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 
@@ -72,6 +97,31 @@
       function stopFunc() {
         clearInterval(myInterval);
       }
+
+      //  document.ready.function () {
+      //  alert("want notified?");
+      // };
+      //document.querySelector("#lastName").textContent = "hi";
+      //  document.querySelector("*").textContent = "hi";
+
+      const firstname = document.querySelector("#name");
+      const lastname = document.querySelector("#Lastname");
+      const email = document.querySelector("#Email");
+      const password = document.querySelector("#Password");
+      const form = document.querySelector("#form");
+      const errorEl = document.querySelector("#error");
+
+      form.addEventListener("submit", myFunc());
+
+      function myFunc() {
+        let text = "";
+        if (firstname.value === "" || firstname.value === null) {
+          text += "name is required";
+        } else if (firstname.value.length < 8) {
+          text += " more than 8 characters";
+        }
+      }
+      myFunc();
     </script>
   </body>
 </html>

@@ -138,24 +138,6 @@ function setFirstElement(myNewArr, c) {
 }
 console.log(setFirstElement([1, 2], 3));
 
-function myChallenge(firstArray, secondArray) {
-  firstArray = [1, 2, 3, 4];
-  secondArray = [5, 6, 7, 8];
-  for (let x = 0; firstArray.length; x++) {
-    for (let y = 0; secondArray.length; y++) {
-      if (firstArray[x] in firstArray === secondArray[y] in secondArray) {
-        return "yes";
-      } else if (
-        firstArray[x] in firstArray !==
-        secondArray[y] in secondArray
-      ) {
-        return "no";
-      }
-    }
-  }
-}
-console.log(myChallenge());
-
 function getLastElement(myArr) {
   let newX = myArr.length - 1;
   return myArr[newX];
@@ -221,4 +203,27 @@ console.log(halve([1, 2, 3, 4]));
 let alphabet = ["a", "b", "c", "d"];
 console.log(alphabet.join(" & "));
 
+function myChallenge(firstArray, secondArray) {
+  for (let x = 0; x <= firstArray.length; x++) {
+    for (let y = 0; y <= secondArray.length; y++) {
+      if (firstArray[x] === secondArray[y]) {
+        return true;
+      } else if (firstArray[x] !== secondArray[y]) {
+        return false;
+      }
+    }
+  }
+}
+console.log(myChallenge([1, 2, 3], [3, 4, 5]));
 
+function wordCount(x) {
+  let a = 0;
+  let b = x.trim();
+  for (let c = 0; c <= b.length; c++) {
+    if (b[c] === " ") {
+     return a++;
+    }
+    
+  }
+}
+console.log(wordCount("hello dear aida"));
