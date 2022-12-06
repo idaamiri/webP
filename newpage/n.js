@@ -324,29 +324,31 @@ console.log(myNewChallenge([1, 2, 3], [4, 5, 6]));
 
 // memory
 
-function numbers(a) {
-  let result = false;
- a= a.toString();
-  b = 0;
-  for (let x = 0; x <= a.length; x++) {
-    b += parseInt(a[x]);
-  }
 
-  if (a % b == 0) {
-    result = true;
-  }
 
-  return result;
-}
-console.log(numbers(21));
-
-function aida(b) {
-  b = b.toString();
+function num1(b) {
+  z = b.toString();
   let a = 0;
-  for (let x = 0; x <= b.length; x++) {
+  for (let x = 0; x <= z.length; x++) {
     a += parseInt(b[x]);
   }
   b = parseInt(b);
   return a;
 }
-console.log(aida(21));
+console.log(num1(21));
+
+function numbers(a) {
+  let result = false;
+  a = a.toString();
+  b = 0;
+  for (let x = 0; x <= a.length; a++) {
+    b += parseInt(a[x]);
+  }
+  a = parseInt(a);
+  if (a % b === 0) {
+    result = true;
+  }
+
+  return result;
+}
+console.log(numbers(51));
