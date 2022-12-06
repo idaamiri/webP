@@ -8,20 +8,34 @@
     <style></style>
   </head>
   <body>
-    <script>
-      let myArray = [];
-      myArray.push("OIP.jfif");
-      myArray.push("R (2).jfif");
-      myArray.push("R.png");
-      myArray.push("rick.jfif");
-      myArray.push("z.jfif");
-      console.log(myArray);
+    <h3>This is to do list:</h3>
+    <form>
+      <input id="myInput" type="text" />
+      <button id="myB">click here</button>
+    </form>
 
-      //   <img src="../amazon/OIP.jfif" alt="1" width="750px" height="400px" />
-      // <img src="../amazon/R (2).jfif" alt="2" width="750px" height="400px" />
-      //  <img src="../amazon/R.png" alt="3" width="750px" height="400px" />
-      // <img src="../amazon/rick.jfif" alt="4" width="750px" height="400px" />
-      //<img src="../amazon/z.jfif" alt="5" width="750px" height="400px" />
+    <h2 id="myL">things to do:</h2>
+    <script>
+      let myInp = document.querySelector("#myInput");
+      let myButton = document.querySelector("#myB");
+      let myList = document.querySelector("#myL");
+      myButton.addEventListener("click", myInputFunc);
+
+      function myInputFunc() {
+        myList.textContent += " " + myInput.value;
+      }
+      myInputFunc();
+
+      function numbersChallenge() {
+        let myArr = [5, 4, 2, 1];
+        let text = "";
+        for (let i = 0; i < myArr.length; i++) {
+          text += myArr[i];
+        }
+        return text;
+      }
+
+      console.log(numbersChallenge());
     </script>
   </body>
 </html>

@@ -216,14 +216,137 @@ function myChallenge(firstArray, secondArray) {
 }
 console.log(myChallenge([1, 2, 3], [3, 4, 5]));
 
-function wordCount(x) {
-  let a = 0;
-  let b = x.trim();
-  for (let c = 0; c <= b.length; c++) {
-    if (b[c] === " ") {
-     return a++;
+function myNewChallenge(firstArray, secondArray) {
+  let result = false;
+  for (let x = 0; x <= firstArray.length; x++) {
+    if (secondArray.indexOf(firstArray[x]) !== -1) {
+      result = true;
     }
-    
   }
+  return result;
 }
-console.log(wordCount("hello dear aida"));
+console.log(myNewChallenge([1, 2, 3], [4, 5, 6]));
+
+//function reverseString() {
+//for (let x = 0; x <= 50; x++) {
+//console.log(reverseString());
+
+function guzChoz() {
+  let an = "";
+  for (let x = 1; x <= 1000; x++) {
+    if (x % 3 === 0 && x % 5 === 0) {
+      an += " guzchos ";
+    } else if (x % 3 === 0) {
+      an += " guz ";
+    } else if (x % 5 === 0) {
+      an += " chos ";
+    } else {
+      an += " " + x;
+    }
+  }
+  return an;
+}
+console.log(guzChoz());
+
+// for (let y = 0; y <= arguments.length; y++) {
+
+function ass() {
+  let result = false;
+  for (let m = 0; m <= arguments.length; m++) {
+    for (let x = 0; [m][0] <= [m][0].length; x++) {
+      for (let z = 0; m[1] <= m[1].length; z++) {
+        for (let y = 0; m[2] <= m[2].length; z++) {
+          if ([z].indexOf([x]) !== -1) {
+            result = true;
+          } else if ([z].indexOf([x]) !== -1) {
+            result = true;
+          } else if ([y].indexOf([x]) !== -1) {
+            result = true;
+          }
+        }
+      }
+    }
+  }
+  return result;
+}
+console.log(ass([1, 2, 3], [3, 5, 6], [6, 7, 8]));
+
+function enter() {
+  let result = false;
+  for (let m = 0; m <= arguments.length; m++) {
+    for (let x = 0; x <= [m][0].length; x++) {
+      if ([m][1].indexOf([m][x]) !== -1) {
+        result = true;
+      } else if ([m][2].indexOf([m][x]) !== -1) {
+        result = true;
+      }
+    }
+  }
+  return result;
+}
+console.log(enter([1, 2, 3], [3, 5, 6], [6, 7, 8]));
+
+function myNewChallenge(firstArray, secondArray) {
+  let result = false;
+  for (let x = 0; x <= firstArray.length; x++) {
+    if (secondArray.indexOf(firstArray[x]) !== -1) {
+      result = true;
+    }
+  }
+  return result;
+}
+console.log(myNewChallenge([1, 2, 3], [4, 5, 6]));
+
+function harshad(a) {
+  a = a.toString();
+  z = false;
+  let result = 0;
+  for (let x = 0; x <= a.length; x++) {
+    result += a[x];
+  }
+  if (a % result === 0) {
+    z = true;
+  }
+  return z;
+}
+console.log(harshad(21));
+
+function myNewChallenge(firstArray, secondArray) {
+  let result = false;
+  for (let x = 0; x <= firstArray.length; x++) {
+    if (secondArray.indexOf(firstArray[x]) !== -1) {
+      result = true;
+    }
+  }
+  return result;
+}
+console.log(myNewChallenge([1, 2, 3], [4, 5, 6]));
+
+// memory
+
+function numbers(a) {
+  let result = false;
+ a= a.toString();
+  b = 0;
+  for (let x = 0; x <= a.length; x++) {
+    b += parseInt(a[x]);
+  }
+
+  if (a % b == 0) {
+    result = true;
+  }
+
+  return result;
+}
+console.log(numbers(21));
+
+function aida(b) {
+  b = b.toString();
+  let a = 0;
+  for (let x = 0; x <= b.length; x++) {
+    a += parseInt(b[x]);
+  }
+  b = parseInt(b);
+  return a;
+}
+console.log(aida(21));

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="welcome.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +9,36 @@
   </head>
   <body>
     <p id="welcome">welcome</p>
+
+    <header>List</header>
+    <form>
+      <input type="text" class="to-do-input" /><button
+        class="to-do-button"
+        type="submit"
+      >
+        <i class="fas-fa"></i>
+      </button>
+    </form>
+    <div class="to-do-container">
+      <ul class="to-do-list"></ul>
+      <div class="to-do"></div>
+    </div>
     <script>
       let welcome = document.getElementById("welcome");
       let name = "aida amiri";
       let greeting = "welcome back ";
       welcome.innerText = greeting + name;
-      welcome.innerText +="👋"
+      welcome.innerText += "👋";
+
+      const toDo = document.querySelector(".to-do-input");
+      const toDoButton = document.querySelector(".to-do-button");
+      const toDoList = document.querySelector(".to-do-list");
+
+      toDoButton.addEventListener("click", addToDo);
+
+      function addToDo(event) {
+        event.preventDefault();
+      }
     </script>
   </body>
 </html>
