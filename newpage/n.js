@@ -324,18 +324,7 @@ console.log(myNewChallenge([1, 2, 3], [4, 5, 6]));
 
 // memory
 
-
-
-function num1(b) {
-  z = b.toString();
-  let a = 0;
-  for (let x = 0; x <= z.length; x++) {
-    a += parseInt(b[x]);
-  }
-  b = parseInt(b);
-  return a;
-}
-console.log(num1(21));
+// inter your number to see if it is harshad or not
 
 function numbers(a) {
   let result = false;
@@ -352,3 +341,18 @@ function numbers(a) {
   return result;
 }
 console.log(numbers(51));
+
+function harshadNumber() {
+  b = 0;
+  for (let i = 0; i <= 1000; i++) {
+    i = i.toString();
+    for (let x = 0; x <= [i].length; x++) {
+      b += parseInt(i[x]);
+    }
+    i = parseInt(i);
+    if (i % b === 0) {
+      return [i];
+    }
+  }
+}
+console.log(harshadNumber());
