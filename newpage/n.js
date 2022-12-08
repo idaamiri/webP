@@ -342,17 +342,49 @@ function numbers(a) {
 }
 console.log(numbers(51));
 
+function romanToInt(a) {
+  myNumber = 0;
+  I = 1;
+  V = 5;
+  X = 10;
+  L = 50;
+  C = 100;
+  D = 500;
+  M = 1000;
+
+  for (let b = 0; b <= a.length; a++) {
+    if (a[b] === "I") {
+      myNumber += 1;
+    } else if (a[b] === "V") {
+      myNumber += 5;
+    } else if (a[b] === "X") {
+      myNumber += 10;
+    } else if (a[b] === "L") {
+      myNumber += 50;
+    } else if (a[b] === "C") {
+      myNumber += 100;
+    } else if (a[b] === "D") {
+      myNumber += 500;
+    } else if (a[b] === "M") {
+      myNumber += 1000;
+    }
+  }
+  console.log(a);
+}
+romanToInt("III");
+
+
 function harshadNumber() {
   b = 0;
-  for (let i = 0; i <= 1000; i++) {
-    i = i.toString();
+  for (let i = 1; i <= 1000; i++) {
+    [i] = [i].toString();
     for (let x = 0; x <= [i].length; x++) {
-      b += parseInt(i[x]);
+      b += parseInt([x]);
     }
-    i = parseInt(i);
-    if (i % b === 0) {
-      return [i];
+    [i] = parseInt(i);
+    if ([i] % b === 0) {
+      console.log([i]);
     }
   }
 }
-console.log(harshadNumber());
+harshadNumber();
