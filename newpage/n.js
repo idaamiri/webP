@@ -342,8 +342,81 @@ function numbers(a) {
 }
 console.log(numbers(51));
 
-function romanToInt(a) {
-  myNumber = 0;
+function harshadNumber() {
+  for (let i = 0; i <= 150; i++) {
+    console.log(i);
+    let stringNumber = i.toString();
+    for (let x = 0; x <= stringNumber.length; x++) {
+      b = 0;
+      b += parseInt(stringNumber[x]);
+      if (i % b == 0) {
+        console.log(i);
+      }
+    }
+  }
+}
+harshadNumber();
+
+function challenge1(a) {
+  let c = [];
+  for (let b = 0; b <= a.length; a++) {
+    c += a;
+  }
+  return c;
+}
+console.log(challenge1([1, 4, 3, 4, 5]));
+
+function challenge2(a) {
+  let c = "";
+  for (let b = 0; b < a.length; b++) {
+    c += " " + typeof a[b];
+  }
+  return c;
+}
+console.log(challenge2(["hasan", 1, 2]));
+
+function challenge3(a, b) {
+  let c = a.concat(b);
+  return c;
+}
+console.log(challenge3([1, 2, 3], [4, 5, 6]));
+
+function challenge4(a) {
+  let c = "";
+  for (let b = 4; a.length <= b; a--) {
+    c += a;
+  }
+  return c;
+}
+console.log(challenge4([1, 2, 3, 4]));
+
+function har1() {
+  for (index = 10; index >= 1; index--) {
+    console.log(index);
+  }
+}
+har1();
+
+function m1() {
+  for (a = 0; a <= 50; a++) {
+    console.log(a);
+  }
+
+  function newNumbers() {
+    let toSt = a.toString();
+    for (let x = 0; x <= toSt.length; x++) {
+      b = 0;
+      b += parseInt(toSt[x]);
+      if (a % b === 0) {
+        console.log(index);
+      }
+    }
+  }
+  return newNumbers();
+}
+
+function romanToInteger(b) {
+  a = 0;
   I = 1;
   V = 5;
   X = 10;
@@ -351,40 +424,23 @@ function romanToInt(a) {
   C = 100;
   D = 500;
   M = 1000;
-
-  for (let b = 0; b <= a.length; a++) {
-    if (a[b] === "I") {
-      myNumber += 1;
-    } else if (a[b] === "V") {
-      myNumber += 5;
-    } else if (a[b] === "X") {
-      myNumber += 10;
-    } else if (a[b] === "L") {
-      myNumber += 50;
-    } else if (a[b] === "C") {
-      myNumber += 100;
-    } else if (a[b] === "D") {
-      myNumber += 500;
-    } else if (a[b] === "M") {
-      myNumber += 1000;
+  for (index = 0; index <= b.length; index++) {
+    if (b[index] === "I") {
+      a += I;
+    } else if (b[index] === "V") {
+      a += 5;
+    } else if (b[index] === "X") {
+      a += 10;
+    } else if (b[index] === "L") {
+      a += 50;
+    } else if (b[index] === "C") {
+      a += 100;
+    } else if (b[index] === "D") {
+      a += 500;
+    } else if (b[index] === "M") {
+      a += 1000;
     }
   }
-  console.log(a);
+  return a;
 }
-romanToInt("III");
-
-
-function harshadNumber() {
-  b = 0;
-  for (let i = 1; i <= 1000; i++) {
-    [i] = [i].toString();
-    for (let x = 0; x <= [i].length; x++) {
-      b += parseInt([x]);
-    }
-    [i] = parseInt(i);
-    if ([i] % b === 0) {
-      console.log([i]);
-    }
-  }
-}
-harshadNumber();
+console.log(romanToInteger("XIII"));
